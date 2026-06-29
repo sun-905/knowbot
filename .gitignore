@@ -1,0 +1,45 @@
+# ===== 环境变量 & 密钥（⚠️ 致命级：必须忽略） =====
+.env
+.env.local
+.env.*.local
+
+# ===== Docker & 数据卷 =====
+docker-compose.override.yml
+mysql_data/
+qdrant_data/
+*.pid
+
+# ===== 后端 Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+# 虚拟环境
+backend/.venv/
+backend/venv/
+# 上传的临时文档
+backend/tmp_uploads/
+
+# ===== 前端 Node =====
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# ===== IDE & 编辑器 =====
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ===== 系统文件 =====
+*.log
+*.tmp

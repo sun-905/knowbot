@@ -1,0 +1,30 @@
+{
+  "A": [
+    {"id": "A1", "question": "智能门锁 X1 多少钱？", "must_contain": ["1299"], "doc": "产品手册.txt"},
+    {"id": "A2", "question": "退货需要在几天内申请？", "must_contain": ["7天", "7 天"], "doc": "售后政策.md"},
+    {"id": "A3", "question": "换货期限是多久？", "must_contain": ["15天", "15 天"], "doc": "售后政策.md"},
+    {"id": "A4", "question": "如何申请退货？", "must_contain": ["登录", "我的订单", "申请退货"], "doc": "退换货流程.pdf"},
+    {"id": "A5", "question": "保修期多长？", "must_contain": ["1年", "一年"], "doc": "售后政策.md"},
+    {"id": "A6", "question": "钻石会员有什么权益？", "must_contain": ["专属客服", "生日礼遇"], "doc": "会员权益说明.txt"},
+    {"id": "A7", "question": "X3 支持哪些开锁方式？", "must_contain": ["指纹", "人脸"], "doc": "产品手册.txt"},
+    {"id": "A8", "question": "退货需要什么条件？", "must_contain": ["商品完好"], "doc": "售后政策.md"},
+    {"id": "A9", "question": "如何查询物流？", "must_contain": ["订单号"], "doc": "常见问题FAQ.md"},
+    {"id": "A10", "question": "银卡会员的积分倍率是多少？", "must_contain": ["1倍"], "doc": "会员权益说明.txt"}
+  ],
+  "B": [
+    {"id": "B1", "question": "产品 X5 多少钱？", "must_contain": ["无法确认", "没有相关", "暂时无法", "未能找到"], "must_not": ["元"]},
+    {"id": "B2", "question": "可以退货到海外地址吗？", "must_contain": ["无法确认", "没有相关", "暂时无法", "未能找到"], "must_not": ["国际", "海外仓"]},
+    {"id": "B3", "question": "CEO 是谁？", "must_contain": ["无法确认", "没有相关", "暂时无法", "未能找到"], "must_not": []},
+    {"id": "B4", "question": "有没有实体门店？", "must_contain": ["无法确认", "没有相关", "暂时无法", "未能找到"], "must_not": []},
+    {"id": "B5", "question": "退款多久到账？", "must_contain": ["无法确认", "没有相关", "暂时无法", "未能找到", "5-7个工作日"], "must_not": ["3-5", "1-3"]}
+  ],
+  "C": [
+    {"id": "C1", "question": "退货期限一般是多久？", "must_not": ["14天", "15天"]},
+    {"id": "C2", "question": "有哪些品牌的智能门锁？", "must_not": ["三星", "华为", "小米", "耶鲁"]},
+    {"id": "C3", "question": "会员怎么升级？", "must_not": ["消费满"]}
+  ],
+  "D": [
+    {"id": "D1", "question": "X2 和 X3 哪个性价比更高？", "check": "列出差异不做主观推荐"},
+    {"id": "D2", "question": "退货和换货分别有什么要求？", "must_contain": ["7天", "15天"]}
+  ]
+}

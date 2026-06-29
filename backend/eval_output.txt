@@ -1,0 +1,580 @@
+============================= test session starts =============================
+platform win32 -- Python 3.10.20, pytest-9.1.1, pluggy-1.6.0 -- D:\Anaconda\envs\rag\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\lovelylady\Desktop\Interview\backend
+configfile: pytest.ini
+plugins: anyio-4.13.0, langsmith-0.8.11, asyncio-1.4.0
+asyncio: mode=auto, debug=False, asyncio_default_fixture_loop_scope=function, asyncio_default_test_loop_scope=function
+collecting ... collected 1 item
+
+tests/rag_eval/test_eval_hard_assertions.py::test_all_hard_assertions [32m2026-06-28 19:35:05.519[0m | [1mINFO    [0m | [36mapp.services.intent[0m:[36mclassify_intent[0m:[36m130[0m - [1m“‚Õº(L1-πÊ‘Ú): ≤˙∆∑◊…—Ø (0.95)[0m
+[32m2026-06-28 19:35:05.520[0m | [1mINFO    [0m | [36mapp.services.chat[0m:[36mrag_chat_stream[0m:[36m152[0m - [1m[113] “‚Õº: ≤˙∆∑◊…—Ø (rule) ∫ƒ ± 0.00s[0m
+[32m2026-06-28 19:35:23.681[0m | [1mINFO    [0m | [36mapp.core.embedding[0m:[36mget_embedding_model[0m:[36m15[0m - [1m’˝‘⁄º”‘ÿ embedding ƒ£–Õ: BAAI/bge-large-zh-v1.5£¨…Ë±∏: cpu[0m
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9f5b0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: aacf66c2-d636-472a-b6dd-71083c031d87)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9ce50>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: a8318890-5976-4273-8a2a-9aa10e93243f)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9f100>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: aab0f11c-6023-4c25-8a7a-b2c8b540b7fb)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9fa30>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 3c8545f7-e09a-4561-a3ee-433d6ab319ba)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9fd60>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 772bcc68-9a55-49d7-8dd4-133b64c4cb52)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9eda0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: b8b79fb5-c17f-4506-8419-efb7ad5b61fc)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9e020>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 189d5bdd-b86d-4264-aee6-22a34a0990f3)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9fcd0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 88e585ad-fbac-4862-bc4e-6dfa1e3b5359)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9fbb0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: f735ddf3-b255-4761-afd6-fb789434e376)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9f700>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: e96ffdba-d0e6-4100-9f07-e985a7f7b009)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9f490>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 1de3f291-7037-4695-a889-656efe9906a1)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9f8b0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 33d27d38-a1ce-4425-92d6-9aed950ca26a)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+[32m2026-06-28 19:40:31.091[0m | [31m[1mERROR   [0m | [36mapp.services.chat[0m:[36mrag_chat_stream[0m:[36m218[0m - [31m[1m[113] ªÏ∫œºÏÀ˜“Ï≥£: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/model.safetensors (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfa8ca0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: ab5401fd-9439-401b-9c3a-5b2c92bcf21d)')[0m
+[32m2026-06-28 19:40:31.184[0m | [1mINFO    [0m | [36mapp.services.intent[0m:[36mclassify_intent[0m:[36m130[0m - [1m“‚Õº(L1-πÊ‘Ú):  €∫ÛŒ Ã‚ (0.95)[0m
+[32m2026-06-28 19:40:31.184[0m | [1mINFO    [0m | [36mapp.services.chat[0m:[36mrag_chat_stream[0m:[36m152[0m - [1m[114] “‚Õº:  €∫ÛŒ Ã‚ (rule) ∫ƒ ± 0.00s[0m
+[32m2026-06-28 19:40:31.184[0m | [1mINFO    [0m | [36mapp.core.embedding[0m:[36mget_embedding_model[0m:[36m15[0m - [1m’˝‘⁄º”‘ÿ embedding ƒ£–Õ: BAAI/bge-large-zh-v1.5£¨…Ë±∏: cpu[0m
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x21096971240>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 9285c294-9d04-4979-b00d-4e9b3954fe44)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210967ea9e0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 7b9000fc-fd23-4588-933d-79dad24ce216)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfaad40>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 5509d858-cad7-4ff5-b727-52d639f56f60)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfab730>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 134cddaa-d9fa-4914-a720-95951d2b6961)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfaba90>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: d4acf209-8078-454c-a58e-996f9069010a)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfabe20>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 59ff2896-e620-4f85-a27e-f202799bb726)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc940>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 7924cc97-3a20-47ec-8746-5620ed689fc3)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbf2bf10>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 55282ebf-b5bd-42c4-8d58-fd4330babcef)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210967eaa70>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 77e9b956-8f45-4452-9bbe-9b6a2e41e50e)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfa88b0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 3c488042-ef6a-46e2-bca4-1cabedc03a82)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfabd30>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: e2962c33-fddb-4708-af74-3d8efb4c5d28)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfab910>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: f5bc1394-2120-4110-a98b-055ae49d411e)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+[32m2026-06-28 19:45:38.027[0m | [31m[1mERROR   [0m | [36mapp.services.chat[0m:[36mrag_chat_stream[0m:[36m218[0m - [31m[1m[114] ªÏ∫œºÏÀ˜“Ï≥£: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/model.safetensors (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdcd00>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 2b16b5ca-fcfc-4c2c-9462-f836a0494f0c)')[0m
+[32m2026-06-28 19:45:38.119[0m | [1mINFO    [0m | [36mapp.services.intent[0m:[36mclassify_intent[0m:[36m130[0m - [1m“‚Õº(L1-πÊ‘Ú):  €∫ÛŒ Ã‚ (0.95)[0m
+[32m2026-06-28 19:45:38.119[0m | [1mINFO    [0m | [36mapp.services.chat[0m:[36mrag_chat_stream[0m:[36m152[0m - [1m[115] “‚Õº:  €∫ÛŒ Ã‚ (rule) ∫ƒ ± 0.00s[0m
+[32m2026-06-28 19:45:38.120[0m | [1mINFO    [0m | [36mapp.core.embedding[0m:[36mget_embedding_model[0m:[36m15[0m - [1m’˝‘⁄º”‘ÿ embedding ƒ£–Õ: BAAI/bge-large-zh-v1.5£¨…Ë±∏: cpu[0m
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdd900>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: c8ca9701-d9da-4831-bc57-1097de499cde)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfde260>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 36de8529-8f49-48f9-9f0a-419030869a47)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfde5c0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: edd2d193-25e5-451f-8270-13df2c3225c0)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x21096972c50>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: bdaec4d3-0039-40fd-98d7-1dc7abd4a8be)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x21096973fa0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: ac20e745-1a50-44e9-af1b-16d35e2edcd5)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfaab90>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: eed42e6d-7e03-496d-a77c-a55141ad52e9)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfabdf0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: ac3c412f-1621-4a94-88a8-707a9bb446a1)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210967e95d0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: d38a09f5-dd50-49a6-bb69-eebd8d757686)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cc2ff640>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 8afa8650-b8a2-4b38-afcd-b180ef85a772)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfde5f0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 19a6dfe1-452a-494c-ab7e-9d2f25634f15)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfddd50>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 4b91c57f-02e0-42f6-8364-bc95087e69a5)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdd420>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 93275583-f89b-4b08-a9b3-52d265360638)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+[32m2026-06-28 19:50:44.884[0m | [31m[1mERROR   [0m | [36mapp.services.chat[0m:[36mrag_chat_stream[0m:[36m218[0m - [31m[1m[115] ªÏ∫œºÏÀ˜“Ï≥£: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/model.safetensors (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfa8b20>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: fbac5745-092e-4adb-a1ef-7232c3e4e4c7)')[0m
+[32m2026-06-28 19:50:44.943[0m | [1mINFO    [0m | [36mapp.services.intent[0m:[36mclassify_intent[0m:[36m130[0m - [1m“‚Õº(L1-πÊ‘Ú):  €∫ÛŒ Ã‚ (0.95)[0m
+[32m2026-06-28 19:50:44.943[0m | [1mINFO    [0m | [36mapp.services.chat[0m:[36mrag_chat_stream[0m:[36m152[0m - [1m[123] “‚Õº:  €∫ÛŒ Ã‚ (rule) ∫ƒ ± 0.00s[0m
+[32m2026-06-28 19:50:44.943[0m | [1mINFO    [0m | [36mapp.core.embedding[0m:[36mget_embedding_model[0m:[36m15[0m - [1m’˝‘⁄º”‘ÿ embedding ƒ£–Õ: BAAI/bge-large-zh-v1.5£¨…Ë±∏: cpu[0m
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdd8a0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 90b4a0aa-01b1-417f-8cc0-3db454dd443b)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc130>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 6f9b79ed-5f1a-4b1d-9450-80e0010d22c0)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc580>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 4dca7ef4-f0ba-487f-b559-369fad6c8461)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdd4b0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 67436462-8cbb-4036-9c7f-74e97b56069f)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfde0b0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: eb799cf8-bb94-475d-937b-6ec500c86a0d)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfa9420>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 37bb7505-6c3a-4c72-b869-4d775128e915)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfde260>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 9813cf82-c6dd-47e4-abef-11dce6ef300b)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdded0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 75c2c776-98a5-407a-9450-902d9cf53881)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc400>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 76d4643b-f068-42d4-b4fe-9615b0b67271)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfddf90>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 0b8fabaf-7b24-428c-8ac1-2978ea80dc97)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdd720>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 1a409d53-8d67-4504-aea3-24e4bb9f1c73)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc520>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 9f4fdcd4-606b-45a1-8ce5-f1ef22cd2f3b)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+[32m2026-06-28 19:55:51.451[0m | [31m[1mERROR   [0m | [36mapp.services.chat[0m:[36mrag_chat_stream[0m:[36m218[0m - [31m[1m[123] ªÏ∫œºÏÀ˜“Ï≥£: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/model.safetensors (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdf3a0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 0395c41a-ca66-483c-84e6-e6b0dfb2b5ee)')[0m
+[32m2026-06-28 19:55:51.514[0m | [1mINFO    [0m | [36mapp.services.intent[0m:[36mclassify_intent[0m:[36m130[0m - [1m“‚Õº(L1-πÊ‘Ú):  €∫ÛŒ Ã‚ (0.95)[0m
+[32m2026-06-28 19:55:51.514[0m | [1mINFO    [0m | [36mapp.services.chat[0m:[36mrag_chat_stream[0m:[36m152[0m - [1m[126] “‚Õº:  €∫ÛŒ Ã‚ (rule) ∫ƒ ± 0.00s[0m
+[32m2026-06-28 19:55:51.514[0m | [1mINFO    [0m | [36mapp.core.embedding[0m:[36mget_embedding_model[0m:[36m15[0m - [1m’˝‘⁄º”‘ÿ embedding ƒ£–Õ: BAAI/bge-large-zh-v1.5£¨…Ë±∏: cpu[0m
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdd600>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 9999bf6d-2a06-4a4d-be10-be053e57503b)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdca60>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 9ed6b31e-8455-4ba6-ae4f-4ccdd3c62d0c)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdda80>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: f9e46b71-093a-4068-a954-f7e9d3dc8154)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdca30>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 89fd170b-8c48-4102-b5dd-11dbb5c4659c)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc580>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: a4efce17-e43a-4f0a-b5e0-08414f19987d)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210969710c0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 638e7646-34d2-4285-82b5-4dd4994d8595)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc130>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 333e8720-a38c-4832-bd5f-eb54226f6701)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdd6c0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: ff564d57-2ab6-417a-8725-7a9d1018d764)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdf610>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: aaa604b0-9a5d-4ffd-884f-b70296e8ca93)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfddb40>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 833a9222-068a-48bd-93da-4ae30b685f43)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfde4a0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 74c8f127-aa2c-4430-b8d5-01386dd5c5f7)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdf790>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 68f3fa85-d5d2-4d6c-b879-ba086fbd24f7)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+[32m2026-06-28 20:00:58.090[0m | [31m[1mERROR   [0m | [36mapp.services.chat[0m:[36mrag_chat_stream[0m:[36m218[0m - [31m[1m[126] ªÏ∫œºÏÀ˜“Ï≥£: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/model.safetensors (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfec580>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 02cf2b2b-c2fe-40b5-9aee-3c7150ed254f)')[0m
+[32m2026-06-28 20:00:58.160[0m | [1mINFO    [0m | [36mapp.core.embedding[0m:[36mget_embedding_model[0m:[36m15[0m - [1m’˝‘⁄º”‘ÿ embedding ƒ£–Õ: BAAI/bge-large-zh-v1.5£¨…Ë±∏: cpu[0m
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc8b0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 77442a10-4707-4dce-8a85-f4f2d9dbf43f)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdf7c0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: f885cffb-5b93-4572-885b-0d1a840183fb)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc2e0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 760a1a0d-b454-4f1e-a866-e01f2ed9f4c3)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdded0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 2e06d6dc-2c46-4d70-8dbb-579c1b083bde)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210969717e0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 980278ad-714d-4542-8d23-8a2d9de6548e)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc070>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 25a6b9e9-02c4-417b-8168-85f6dda2f00a)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdfdc0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 9b530500-5b12-4614-a9ce-9cb4a4c6f6c8)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdee60>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 8a8b3bd7-0ab1-40cf-ab7e-a36a37dd2f8f)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdf010>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: e183d581-8853-42ae-bb46-5c3b50343a34)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210969a7ca0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 1298efae-a86d-422d-b690-9bf08fc0e8d1)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210967eb280>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 76921ebc-413c-4b2d-a0ea-243887f5718f)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfaae60>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: f997a543-d174-4921-b589-925c57d90e1f)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+[32m2026-06-28 20:06:04.659[0m | [31m[1mERROR   [0m | [36mapp.main[0m:[36mglobal_exception_handler[0m:[36m64[0m - [31m[1mŒ¥≤∂ªÒ“Ï≥£: unhandled errors in a TaskGroup (1 sub-exception)[0m
+[32m2026-06-28 20:06:04.813[0m | [31m[1mERROR   [0m | [36mapp.main[0m:[36mglobal_exception_handler[0m:[36m65[0m - [31m[1m∂—’ª:
+  + Exception Group Traceback (most recent call last):
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+  |     await self.app(scope, receive, _send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\middleware\cors.py", line 88, in __call__
+  |     await self.app(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+  |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+  |     raise exc
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+  |     await app(scope, receive, sender)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+  |     await self.app(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\routing.py", line 660, in __call__
+  |     await self.middleware_stack(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\routing.py", line 680, in app
+  |     await route.handle(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\fastapi\routing.py", line 1609, in handle
+  |     await self.original_router.handle(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\fastapi\routing.py", line 2047, in handle
+  |     await included_router._handle_selected(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\fastapi\routing.py", line 1629, in _handle_selected
+  |     await original_route.handle(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\fastapi\routing.py", line 1218, in handle
+  |     await app(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\fastapi\routing.py", line 143, in app
+  |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+  |     raise exc
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+  |     await app(scope, receive, sender)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\fastapi\routing.py", line 130, in app
+  |     await response(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\sse_starlette\sse.py", line 275, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\anyio\_backends\_asyncio.py", line 799, in __aexit__
+  |     raise BaseExceptionGroup(
+  | exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\connection.py", line 204, in _new_conn
+    |     sock = connection.create_connection(
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    |     raise err
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    |     sock.connect(sa)
+    | TimeoutError: timed out
+    | 
+    | The above exception was the direct cause of the following exception:
+    | 
+    | Traceback (most recent call last):
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    |     response = self._make_request(
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    |     raise new_e
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    |     self._validate_conn(conn)
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\connectionpool.py", line 1106, in _validate_conn
+    |     conn.connect()
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\connection.py", line 759, in connect
+    |     self.sock = sock = self._new_conn()
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    |     raise ConnectTimeoutError(
+    | urllib3.exceptions.ConnectTimeoutError: (<HTTPSConnection(host='huggingface.co', port=443) at 0x21096971120>, 'Connection to huggingface.co timed out. (connect timeout=10)')
+    | 
+    | The above exception was the direct cause of the following exception:
+    | 
+    | Traceback (most recent call last):
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\requests\adapters.py", line 696, in send
+    |     resp = conn.urlopen(
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\connectionpool.py", line 842, in urlopen
+    |     retries = retries.increment(
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\util\retry.py", line 543, in increment
+    |     raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    | urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/model.safetensors (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x21096971120>, 'Connection to huggingface.co timed out. (connect timeout=10)'))
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\sse_starlette\sse.py", line 278, in wrap
+    |     await func()
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\sse_starlette\sse.py", line 258, in stream_response
+    |     async for data in self.body_iterator:
+    |   File "C:\Users\lovelylady\Desktop\Interview\backend\app\api\chat.py", line 160, in event_generator
+    |   File "C:\Users\lovelylady\Desktop\Interview\backend\app\services\chat.py", line 150, in rag_chat_stream
+    |     intent_result = await classify_intent(user_message)
+    |   File "C:\Users\lovelylady\Desktop\Interview\backend\app\services\intent.py", line 134, in classify_intent
+    |     result = await _l2_vector_match(text)
+    |   File "C:\Users\lovelylady\Desktop\Interview\backend\app\services\intent.py", line 71, in _l2_vector_match
+    |     emb = await _get_example_embeddings()
+    |   File "C:\Users\lovelylady\Desktop\Interview\backend\app\services\intent.py", line 46, in _get_example_embeddings
+    |     _example_embeddings = await encode(texts)
+    |   File "C:\Users\lovelylady\Desktop\Interview\backend\app\core\embedding.py", line 26, in encode
+    |     model = await get_embedding_model()
+    |   File "C:\Users\lovelylady\Desktop\Interview\backend\app\core\embedding.py", line 16, in get_embedding_model
+    |     _embedding_model = FlagModel(
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\FlagEmbedding\inference\embedder\encoder_only\base.py", line 79, in __init__
+    |     self.model = AutoModel.from_pretrained(
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\transformers\models\auto\auto_factory.py", line 564, in from_pretrained
+    |     return model_class.from_pretrained(
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\transformers\modeling_utils.py", line 3616, in from_pretrained
+    |     if not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs):
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\transformers\utils\hub.py", line 655, in has_file
+    |     response = get_session().head(
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\requests\sessions.py", line 693, in head
+    |     return self.request("HEAD", url, **kwargs)
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\requests\sessions.py", line 651, in request
+    |     resp = self.send(prep, **send_kwargs)
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\requests\sessions.py", line 784, in send
+    |     r = adapter.send(request, **kwargs)
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\huggingface_hub\utils\_http.py", line 96, in send
+    |     return super().send(request, *args, **kwargs)
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\requests\adapters.py", line 717, in send
+    |     raise ConnectTimeout(e, request=request)
+    | requests.exceptions.ConnectTimeout: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/model.safetensors (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x21096971120>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 80d7131e-03bd-483d-bbd4-16148d93a4cc)')
+    +------------------------------------
+[0m
+[A1] FAIL | ÷«ƒ‹√≈À¯ X1 ∂‡…Ÿ«Æ£ø | answer_snippet=±ß«∏£¨Œ“‘› ±Œﬁ∑®ªÿ¥’‚∏ˆŒ Ã‚°£Ω®“Èƒ˙¡™œµ»Àπ§øÕ∑˛ªÒ»°∞Ô÷˙°£
+[A2] FAIL | ÕÀªı–Ë“™‘⁄º∏ÃÏƒ⁄…Í«Î£ø | answer_snippet=±ß«∏£¨Œ“‘› ±Œﬁ∑®ªÿ¥’‚∏ˆŒ Ã‚°£Ω®“Èƒ˙¡™œµ»Àπ§øÕ∑˛ªÒ»°∞Ô÷˙°£
+[A3] FAIL | ªªªı∆⁄œﬁ «∂‡æ√£ø | answer_snippet=±ß«∏£¨Œ“‘› ±Œﬁ∑®ªÿ¥’‚∏ˆŒ Ã‚°£Ω®“Èƒ˙¡™œµ»Àπ§øÕ∑˛ªÒ»°∞Ô÷˙°£
+[A4] FAIL | »Á∫Œ…Í«ÎÕÀªı£ø | answer_snippet=±ß«∏£¨Œ“‘› ±Œﬁ∑®ªÿ¥’‚∏ˆŒ Ã‚°£Ω®“Èƒ˙¡™œµ»Àπ§øÕ∑˛ªÒ»°∞Ô÷˙°£
+[A5] FAIL | ±£–ﬁ∆⁄∂‡≥§£ø | answer_snippet=±ß«∏£¨Œ“‘› ±Œﬁ∑®ªÿ¥’‚∏ˆŒ Ã‚°£Ω®“Èƒ˙¡™œµ»Àπ§øÕ∑˛ªÒ»°∞Ô÷˙°£
+FAILED
+
+================================== FAILURES ===================================
+__________________________ test_all_hard_assertions ___________________________
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\lovelylady\Desktop\Interview\backend\tests\rag_eval\test_eval_hard_assertions.py", line 77, in test_all_hard_assertions
+  |     answer = await ask_question(client, question, token)
+  |   File "C:\Users\lovelylady\Desktop\Interview\backend\tests\rag_eval\test_eval_hard_assertions.py", line 36, in ask_question
+  |     resp2 = await client.post(
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\httpx\_client.py", line 1859, in post
+  |     return await self.request(
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\httpx\_client.py", line 1540, in request
+  |     return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\httpx\_client.py", line 1629, in send
+  |     response = await self._send_handling_auth(
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\httpx\_client.py", line 1657, in _send_handling_auth
+  |     response = await self._send_handling_redirects(
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\httpx\_client.py", line 1694, in _send_handling_redirects
+  |     response = await self._send_single_request(request)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\httpx\_client.py", line 1730, in _send_single_request
+  |     response = await transport.handle_async_request(request)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\httpx\_transports\asgi.py", line 170, in handle_async_request
+  |     await self.app(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\fastapi\applications.py", line 1162, in __call__
+  |     await super().__call__(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\applications.py", line 90, in __call__
+  |     await self.middleware_stack(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+  |     raise exc
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+  |     await self.app(scope, receive, _send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\middleware\cors.py", line 88, in __call__
+  |     await self.app(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+  |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+  |     raise exc
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+  |     await app(scope, receive, sender)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+  |     await self.app(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\routing.py", line 660, in __call__
+  |     await self.middleware_stack(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\routing.py", line 680, in app
+  |     await route.handle(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\fastapi\routing.py", line 1609, in handle
+  |     await self.original_router.handle(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\fastapi\routing.py", line 2047, in handle
+  |     await included_router._handle_selected(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\fastapi\routing.py", line 1629, in _handle_selected
+  |     await original_route.handle(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\fastapi\routing.py", line 1218, in handle
+  |     await app(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\fastapi\routing.py", line 143, in app
+  |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+  |     raise exc
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+  |     await app(scope, receive, sender)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\fastapi\routing.py", line 130, in app
+  |     await response(scope, receive, send)
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\sse_starlette\sse.py", line 275, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "D:\Anaconda\envs\rag\lib\site-packages\anyio\_backends\_asyncio.py", line 799, in __aexit__
+  |     raise BaseExceptionGroup(
+  | exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\connection.py", line 204, in _new_conn
+    |     sock = connection.create_connection(
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    |     raise err
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    |     sock.connect(sa)
+    | TimeoutError: timed out
+    | 
+    | The above exception was the direct cause of the following exception:
+    | 
+    | Traceback (most recent call last):
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    |     response = self._make_request(
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    |     raise new_e
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    |     self._validate_conn(conn)
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\connectionpool.py", line 1106, in _validate_conn
+    |     conn.connect()
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\connection.py", line 759, in connect
+    |     self.sock = sock = self._new_conn()
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    |     raise ConnectTimeoutError(
+    | urllib3.exceptions.ConnectTimeoutError: (<HTTPSConnection(host='huggingface.co', port=443) at 0x21096971120>, 'Connection to huggingface.co timed out. (connect timeout=10)')
+    | 
+    | The above exception was the direct cause of the following exception:
+    | 
+    | Traceback (most recent call last):
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\requests\adapters.py", line 696, in send
+    |     resp = conn.urlopen(
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\connectionpool.py", line 842, in urlopen
+    |     retries = retries.increment(
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\urllib3\util\retry.py", line 543, in increment
+    |     raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    | urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/model.safetensors (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x21096971120>, 'Connection to huggingface.co timed out. (connect timeout=10)'))
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\sse_starlette\sse.py", line 278, in wrap
+    |     await func()
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\sse_starlette\sse.py", line 258, in stream_response
+    |     async for data in self.body_iterator:
+    |   File "C:\Users\lovelylady\Desktop\Interview\backend\app\api\chat.py", line 160, in event_generator
+    |   File "C:\Users\lovelylady\Desktop\Interview\backend\app\services\chat.py", line 150, in rag_chat_stream
+    |     intent_result = await classify_intent(user_message)
+    |   File "C:\Users\lovelylady\Desktop\Interview\backend\app\services\intent.py", line 134, in classify_intent
+    |     result = await _l2_vector_match(text)
+    |   File "C:\Users\lovelylady\Desktop\Interview\backend\app\services\intent.py", line 71, in _l2_vector_match
+    |     emb = await _get_example_embeddings()
+    |   File "C:\Users\lovelylady\Desktop\Interview\backend\app\services\intent.py", line 46, in _get_example_embeddings
+    |     _example_embeddings = await encode(texts)
+    |   File "C:\Users\lovelylady\Desktop\Interview\backend\app\core\embedding.py", line 26, in encode
+    |     model = await get_embedding_model()
+    |   File "C:\Users\lovelylady\Desktop\Interview\backend\app\core\embedding.py", line 16, in get_embedding_model
+    |     _embedding_model = FlagModel(
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\FlagEmbedding\inference\embedder\encoder_only\base.py", line 79, in __init__
+    |     self.model = AutoModel.from_pretrained(
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\transformers\models\auto\auto_factory.py", line 564, in from_pretrained
+    |     return model_class.from_pretrained(
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\transformers\modeling_utils.py", line 3616, in from_pretrained
+    |     if not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs):
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\transformers\utils\hub.py", line 655, in has_file
+    |     response = get_session().head(
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\requests\sessions.py", line 693, in head
+    |     return self.request("HEAD", url, **kwargs)
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\requests\sessions.py", line 651, in request
+    |     resp = self.send(prep, **send_kwargs)
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\requests\sessions.py", line 784, in send
+    |     r = adapter.send(request, **kwargs)
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\huggingface_hub\utils\_http.py", line 96, in send
+    |     return super().send(request, *args, **kwargs)
+    |   File "D:\Anaconda\envs\rag\lib\site-packages\requests\adapters.py", line 717, in send
+    |     raise ConnectTimeout(e, request=request)
+    | requests.exceptions.ConnectTimeout: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/model.safetensors (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x21096971120>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 80d7131e-03bd-483d-bbd4-16148d93a4cc)')
+    +------------------------------------
+------------------------------ Captured log call ------------------------------
+WARNING  passlib.handlers.bcrypt:bcrypt.py:622 (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\rag\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9f5b0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: aacf66c2-d636-472a-b6dd-71083c031d87)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 1s [Retry 1/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9ce50>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: a8318890-5976-4273-8a2a-9aa10e93243f)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 2s [Retry 2/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9f100>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: aab0f11c-6023-4c25-8a7a-b2c8b540b7fb)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 4s [Retry 3/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9fa30>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 3c8545f7-e09a-4561-a3ee-433d6ab319ba)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 4/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9fd60>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 772bcc68-9a55-49d7-8dd4-133b64c4cb52)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 5/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9eda0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: b8b79fb5-c17f-4506-8419-efb7ad5b61fc)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9e020>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 189d5bdd-b86d-4264-aee6-22a34a0990f3)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 1s [Retry 1/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9fcd0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 88e585ad-fbac-4862-bc4e-6dfa1e3b5359)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 2s [Retry 2/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9fbb0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: f735ddf3-b255-4761-afd6-fb789434e376)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 4s [Retry 3/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9f700>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: e96ffdba-d0e6-4100-9f07-e985a7f7b009)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 4/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9f490>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 1de3f291-7037-4695-a889-656efe9906a1)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 5/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbe9f8b0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 33d27d38-a1ce-4425-92d6-9aed950ca26a)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x21096971240>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 9285c294-9d04-4979-b00d-4e9b3954fe44)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 1s [Retry 1/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210967ea9e0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 7b9000fc-fd23-4588-933d-79dad24ce216)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 2s [Retry 2/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfaad40>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 5509d858-cad7-4ff5-b727-52d639f56f60)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 4s [Retry 3/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfab730>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 134cddaa-d9fa-4914-a720-95951d2b6961)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 4/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfaba90>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: d4acf209-8078-454c-a58e-996f9069010a)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 5/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfabe20>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 59ff2896-e620-4f85-a27e-f202799bb726)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc940>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 7924cc97-3a20-47ec-8746-5620ed689fc3)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 1s [Retry 1/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbf2bf10>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 55282ebf-b5bd-42c4-8d58-fd4330babcef)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 2s [Retry 2/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210967eaa70>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 77e9b956-8f45-4452-9bbe-9b6a2e41e50e)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 4s [Retry 3/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfa88b0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 3c488042-ef6a-46e2-bca4-1cabedc03a82)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 4/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfabd30>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: e2962c33-fddb-4708-af74-3d8efb4c5d28)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 5/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfab910>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: f5bc1394-2120-4110-a98b-055ae49d411e)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdd900>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: c8ca9701-d9da-4831-bc57-1097de499cde)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 1s [Retry 1/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfde260>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 36de8529-8f49-48f9-9f0a-419030869a47)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 2s [Retry 2/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfde5c0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: edd2d193-25e5-451f-8270-13df2c3225c0)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 4s [Retry 3/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x21096972c50>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: bdaec4d3-0039-40fd-98d7-1dc7abd4a8be)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 4/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x21096973fa0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: ac20e745-1a50-44e9-af1b-16d35e2edcd5)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 5/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfaab90>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: eed42e6d-7e03-496d-a77c-a55141ad52e9)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfabdf0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: ac3c412f-1621-4a94-88a8-707a9bb446a1)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 1s [Retry 1/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210967e95d0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: d38a09f5-dd50-49a6-bb69-eebd8d757686)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 2s [Retry 2/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cc2ff640>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 8afa8650-b8a2-4b38-afcd-b180ef85a772)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 4s [Retry 3/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfde5f0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 19a6dfe1-452a-494c-ab7e-9d2f25634f15)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 4/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfddd50>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 4b91c57f-02e0-42f6-8364-bc95087e69a5)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 5/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdd420>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 93275583-f89b-4b08-a9b3-52d265360638)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdd8a0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 90b4a0aa-01b1-417f-8cc0-3db454dd443b)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 1s [Retry 1/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc130>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 6f9b79ed-5f1a-4b1d-9450-80e0010d22c0)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 2s [Retry 2/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc580>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 4dca7ef4-f0ba-487f-b559-369fad6c8461)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 4s [Retry 3/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdd4b0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 67436462-8cbb-4036-9c7f-74e97b56069f)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 4/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfde0b0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: eb799cf8-bb94-475d-937b-6ec500c86a0d)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 5/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfa9420>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 37bb7505-6c3a-4c72-b869-4d775128e915)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfde260>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 9813cf82-c6dd-47e4-abef-11dce6ef300b)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 1s [Retry 1/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdded0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 75c2c776-98a5-407a-9450-902d9cf53881)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 2s [Retry 2/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc400>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 76d4643b-f068-42d4-b4fe-9615b0b67271)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 4s [Retry 3/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfddf90>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 0b8fabaf-7b24-428c-8ac1-2978ea80dc97)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 4/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdd720>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 1a409d53-8d67-4504-aea3-24e4bb9f1c73)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 5/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc520>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 9f4fdcd4-606b-45a1-8ce5-f1ef22cd2f3b)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdd600>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 9999bf6d-2a06-4a4d-be10-be053e57503b)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 1s [Retry 1/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdca60>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 9ed6b31e-8455-4ba6-ae4f-4ccdd3c62d0c)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 2s [Retry 2/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdda80>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: f9e46b71-093a-4068-a954-f7e9d3dc8154)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 4s [Retry 3/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdca30>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 89fd170b-8c48-4102-b5dd-11dbb5c4659c)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 4/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc580>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: a4efce17-e43a-4f0a-b5e0-08414f19987d)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 5/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210969710c0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 638e7646-34d2-4285-82b5-4dd4994d8595)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc130>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 333e8720-a38c-4832-bd5f-eb54226f6701)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 1s [Retry 1/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdd6c0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: ff564d57-2ab6-417a-8725-7a9d1018d764)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 2s [Retry 2/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdf610>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: aaa604b0-9a5d-4ffd-884f-b70296e8ca93)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 4s [Retry 3/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfddb40>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 833a9222-068a-48bd-93da-4ae30b685f43)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 4/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfde4a0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 74c8f127-aa2c-4430-b8d5-01386dd5c5f7)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 5/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdf790>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 68f3fa85-d5d2-4d6c-b879-ba086fbd24f7)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc8b0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 77442a10-4707-4dce-8a85-f4f2d9dbf43f)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 1s [Retry 1/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdf7c0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: f885cffb-5b93-4572-885b-0d1a840183fb)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 2s [Retry 2/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc2e0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 760a1a0d-b454-4f1e-a866-e01f2ed9f4c3)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 4s [Retry 3/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdded0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 2e06d6dc-2c46-4d70-8dbb-579c1b083bde)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 4/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210969717e0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 980278ad-714d-4542-8d23-8a2d9de6548e)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 5/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdc070>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 25a6b9e9-02c4-417b-8168-85f6dda2f00a)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/tokenizer_config.json
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdfdc0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 9b530500-5b12-4614-a9ce-9cb4a4c6f6c8)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 1s [Retry 1/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdee60>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 8a8b3bd7-0ab1-40cf-ab7e-a36a37dd2f8f)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 2s [Retry 2/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfdf010>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: e183d581-8853-42ae-bb46-5c3b50343a34)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 4s [Retry 3/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210969a7ca0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 1298efae-a86d-422d-b690-9bf08fc0e8d1)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 4/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210967eb280>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 76921ebc-413c-4b2d-a0ea-243887f5718f)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+WARNING  huggingface_hub.utils._http:_http.py:329 Retrying in 8s [Retry 5/5].
+WARNING  huggingface_hub.utils._http:_http.py:320 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /BAAI/bge-large-zh-v1.5/resolve/main/config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x210cbfaae60>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: f997a543-d174-4921-b589-925c57d90e1f)')' thrown while requesting HEAD https://huggingface.co/BAAI/bge-large-zh-v1.5/resolve/main/config.json
+============================== warnings summary ===============================
+tests/rag_eval/test_eval_hard_assertions.py::test_all_hard_assertions
+  <frozen importlib._bootstrap>:241: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+tests/rag_eval/test_eval_hard_assertions.py::test_all_hard_assertions
+  <frozen importlib._bootstrap>:241: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/rag_eval/test_eval_hard_assertions.py::test_all_hard_assertions
+================= 1 failed, 2 warnings in 1860.36s (0:31:00) ==================
+sys:1: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

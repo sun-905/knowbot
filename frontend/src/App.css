@@ -1,0 +1,7 @@
+/* 应用级样式 — 主题令牌和全局动画在 index.css 中定义 */
+/* 此文件保留用于路由过渡或布局覆盖 */
+
+/* 路由页面进入动画 */
+.page-enter {
+  animation: fade-in-up 0.3s ease;
+}

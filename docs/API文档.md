@@ -23,6 +23,32 @@ Response 200: { access_token, token_type, user }
 Error 401: 账号或密码错误 / 账号已禁用
 ```
 
+**请求示例**：
+```json
+POST /auth/login
+Content-Type: application/json
+
+{ "account": "13800000001", "password": "mypassword123" }
+```
+
+**响应示例**：
+```json
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIs...",
+  "token_type": "bearer",
+  "user": {
+    "id": 5,
+    "phone": "13800000001",
+    "email": "user@example.com",
+    "nickname": "管理员",
+    "avatar_url": "",
+    "daily_quota": 100,
+    "is_admin": true,
+    "created_at": "2026-06-26T09:34:16+08:00"
+  }
+}
+```
+
 ### GET /auth/me — 获取当前用户信息
 
 ```
@@ -94,6 +120,72 @@ SSE 事件序列:
 Error 429: 今日提问次数已用完 / 并发连接数超限
 ```
 
+**请求示例**：
+```json
+POST /sessions/201/chat
+Authorization: Bearer eyJhbGciOiJIUzI1NiIs...
+Content-Type: application/json
+
+{ "content": "退货需要几天？" }
+```
+
+**SSE 响应流示例**：
+```
+event: intent
+data: {"intent":"售后问题","confidence":0.95,"source":"rule","clarify":false}
+
+event: rewritten_query
+data: {"original":"退货需要几天？","rewritten":"退货处理时限"}
+
+event: processing
+data: {"stage":"检索中"}
+
+event: references
+data: [{"doc_name":"退货流程说明","doc_id":15,"score":0.823,"snippet":"退货申请提交后，客服将在1-3个工作日内审核..."}]
+
+event: delta
+data: {"content":"根据"}
+
+event: delta
+data: {"content":"知识库"}
+
+event: delta
+data: {"content":"，"}
+
+event: delta
+data: {"content":"退货"}
+
+event: delta
+data: {"content":"审核"}
+
+event: delta
+data: {"content":"通常"}
+
+event: delta
+data: {"content":"需要"}
+
+event: delta
+data: {"content":"1"}
+
+event: delta
+data: {"content":"-3"}
+
+event: delta
+data: {"content":"个"}
+
+event: delta
+data: {"content":"工作日"}
+
+event: delta
+data: {"content":"。"}
+
+event: done
+data: {"message_id": 336}
+
+event: followups
+data: ["退货需要提供什么材料？","退款到账要多久？","如何查询退货进度？"]
+```
+
 ---
 
 ## 3. 反馈接口
@@ -146,6 +238,32 @@ Response 201: { id, kb_id, filename, file_type, file_size, chunk_count, status, 
 Error 400: 不支持的文件类型 / 文件过大 (10MB)
 Error 403: 非管理员
 ```
+
+**请求示例**：
+```http
+POST /knowledge/docs/upload
+Authorization: Bearer eyJhbGciOiJIUzI1NiIs...
+Content-Type: multipart/form-data
+
+file: @退货流程.pdf
+kb_id: 1
+```
+
+**响应示例**（秒返，状态为 processing）：
+```json
+{
+  "id": 15,
+  "kb_id": 1,
+  "filename": "退货流程.pdf",
+  "file_type": "pdf",
+  "file_size": 245760,
+  "chunk_count": 0,
+  "status": "processing",
+  "error_msg": null,
+  "created_at": "2026-06-29T20:30:00+08:00"
+}
+```
+后台处理完成后 status 变为 `"ready"`，chunk_count 更新为实际切片数。
 
 ### GET /knowledge/docs — 文档列表
 

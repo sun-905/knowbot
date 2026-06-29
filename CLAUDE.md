@@ -2,7 +2,6 @@
 
 本文件为 Claude Code 提供代码仓库的工作指引。
 
-
 ## 项目概述
 
 基于 RAG（检索增强生成）的 AI 智能客服系统。后端: FastAPI + MySQL + Qdrant。前端: React 19 + Ant Design 6 + Vite 8。大模型: DeepSeek 主用，Qwen 兜底。
